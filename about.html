@@ -1,11 +1,130 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>About page</title>
+	<meta charset="UTF-8">
+	<title>About page</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/zbc7cmi.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zbc7cmi.css">
+	
+	<style>
+		.grid{
+			display:grid;
+			grid-template-columns:3fr 1fr 1fr 1fr;
+			grid-auto-rows:minmax(100px, auto);
+			grid-gap:10px;
+		}
+		.header{
+			text-decoration: none;
+			grid-column: 1;
+			grid-row: 1;
+			font-family: smoothy, sans-serif;
+			font-weight: 400;
+			font-style: italic;
+			font-size: 40px;
+			color: black;
+		}
+		.button{
+			background-color:black;
+			border:#000000, medium;
+			grid-column:2;
+			grid-row: 1;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-left: 10px;
+			margin-right: 20px;
+			padding: 10px;
+			text-align: center;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+			font-size: 16px;
+			text-decoration: none;
+			cursor:pointer;
+			color: white;
+		}
+		.buttons{
+			background-color: black;
+			border: thin, #000000;
+			grid-column: 3;
+			grid-row: 1;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-left: 10px;
+			margin-right: 20px;
+			padding: 10px;
+			text-align: center;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+			font-size: 16px;
+			text-decoration: none;
+			color: white;
+		}
+		.buttoned{
+			background-color: black;
+			grid-column: 4;
+			grid-row: 1;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-left: 10px;
+			margin-right: 20px;
+			padding: 10px;
+			text-align: center;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+			font-size: 16px;
+			text-decoration: none;
+			color: white;
+		}
+		.image{
+			grid-column: 1;
+			grid-row: 2;
+			margin: 10px;
+			font-size: 18px;
+			font-family: verveine, sans-serif;
+			font-weight: 400;
+			font-style: normal; 
+		}
+		.about{
+			grid-column: 2/5;
+			grid-row: 2;
+			font-family: verveine, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 26px
+		}
+		.footer{
+			clear: both;
+			grid-column:1/4;
+			grid-row: 3;
+			text-align:center;
+			margin-left: 200px;
+			font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		}
+	</style>
 </head>
 	
 <body>
-	In progress....
+	
+	<div class="grid">
+		
+		<a href="index.html" class="header"><h1>Briller's Doodles</h1></a>
+		
+		<a href="about.html" class="button">About</a>
+		
+		<a href="gallery.html" class="buttons">Gallery</a>
+		
+		<a href="contact.html" class="buttoned">Contact</a>
+		
+		<div class="image">
+		<a href="about.html">
+			<img src="photos/me.jpg" alt="me in hoodie" style="height: 450px;width: 450px;"></a>
+			<p>That's me &#128516;</p>
+		</div>
+		
+		<div class="about">
+			<p>Hello there. My names Austin Briller and I am a self-taught aspiring artist. I made this page as a way to get my name out there as well as to use it as a online portfolio. If you may be interested in a comissioned piece I would be more than happy to hear out what you would like made. I really enjoy working with digital art but if you would like a physical piece made I am able to provide that as well. Make sure to contact me if you happen to be interested. I also have prints of most of the art pieces shown in the gallery. If you are interested in a print you can contact me about that as well. I hope to hear from you soon. </p>
+		</div>
+		
+		<div class="footer">
+		<p>Contact me @ abriller5180@gmail.com <br><br>Briller's Doodles&#8482;</p>
+		</div>
+	</div>	
 </body>
 </html>
